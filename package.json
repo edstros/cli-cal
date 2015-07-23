@@ -1,0 +1,31 @@
+{
+  "name": "cli-cal",
+  "version": "1.0.0",
+  "description": "Command line calendar in Node",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+     "test": "mocha --recursive test/unit",
+    "test-integration": "mocha --recursive test/integration",
+    "test-cov": "istanbul cover _mocha -- --recursive",
+    "codeclimate-coverage": "codeclimate-test-reporter < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edstros/cli-cal.git"
+  },
+  "author": "Edwin Acevedo <edwin.a.acevedo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edstros/cli-cal/issues"
+  },
+  "homepage": "https://github.com/edstros/cli-cal#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "codeclimate-test-reporter": "^0.1.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}
